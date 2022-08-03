@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.WhackBoardController">
    <children>
-      <GridPane layoutX="123.0" layoutY="113.0" prefHeight="173.0" prefWidth="355.0">
+      <GridPane layoutY="1.0" prefHeight="633.0" prefWidth="753.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -21,15 +21,51 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ImageView fx:id="img00" fitHeight="61.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="img10" fitHeight="61.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
-            <ImageView fx:id="img20" fitHeight="58.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
-            <ImageView fx:id="img01" fitHeight="58.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
-            <ImageView fx:id="img11" fitHeight="61.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <ImageView fx:id="img21" fitHeight="59.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <ImageView fx:id="img02" fitHeight="57.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
-            <ImageView fx:id="img12" fitHeight="59.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <ImageView fx:id="img22" fitHeight="58.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ImageView fx:id="img00" fitHeight="181.0" fitWidth="251.0" onMouseClicked="#imgClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img10" fitHeight="208.0" fitWidth="249.0" onMouseClicked="#imgClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@MoleUp.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img20" fitHeight="210.0" fitWidth="251.0" onMouseClicked="#imgClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img01" fitHeight="209.0" fitWidth="251.0" onMouseClicked="#imgClicked" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@MoleUp.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img11" fitHeight="210.0" fitWidth="250.0" onMouseClicked="#imgClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img21" fitHeight="210.0" fitWidth="253.0" onMouseClicked="#imgClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@MoleUp.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img02" fitHeight="209.0" fitWidth="251.0" onMouseClicked="#imgClicked" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img12" fitHeight="209.0" fitWidth="251.0" onMouseClicked="#imgClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@MoleUp.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img22" fitHeight="207.0" fitWidth="251.0" onMouseClicked="#imgClicked" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@MoleDown.PNG" />
+               </image>
+            </ImageView>
          </children>
       </GridPane>
    </children>

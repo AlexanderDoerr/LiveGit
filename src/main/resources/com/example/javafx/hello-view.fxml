@@ -12,5 +12,5 @@
 
     <Label fx:id="welcomeText" text="The text" />
     <Button fx:id="btnHello" onAction="#onHelloButtonClick" text="Click Me" />
-   <Button fx:id="btnClickCount" mnemonicParsing="false" onAction="#onClickCounter" text="Click Count: 0" />
+<!--   <Button fx:id="btnClickCount" mnemonicParsing="false" onAction="#onClickCounter" text="Click Count: 0" />-->
 </VBox>
